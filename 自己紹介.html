@@ -28,37 +28,116 @@
             padding-bottom: 4px;
             border-bottom: 6px solid rgb(5, 182, 252);
         }
-        .リリース　p{
+        .release{
             font-size: 14px;
             font-style: normal;
             color: rgb(59, 66, 73);
         }
-    </style>
+        .profile img{
+            width: 100%;
+        }
+        .textbox1{
+            width: 600px;
+            padding: 40px;
+            background: white;
+            position: absolute;
+            top: 320px;
+            left: 1em;
+        }
+     </style>
     <header>
         <nav>
             <ul class="gnav-list-1">
-                <li><a href="#">リリース<br></a></li>
-                <li><a href="#">展望<br></a></li>
-                <li><a href="#">事業紹介<br></a></li>
+                <li><a href="#">Release<br></a></li>
+                <li><a href="#">Vision<br></a></li>
+                <li><a href="#">Q&A<br></a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <div class="リリース">
-        <hr>
-        <p>~~~~年~~月   国際取引におけるデジタルフォワードツールをリリース<p>
-        <p>~~~~年~~月   自動車業界における受発注管理プラットフォームを構築<p>
-        <hr>
+        <div class="release">
+             <hr>
+              <p>~~~~年~~月   国際取引におけるデジタルフォワードツールをリリース<p>
+              <p>~~~~年~~月   自動車業界における受発注管理プラットフォームを構築<p>
+             <hr>
         </div>
 
-        <div class="展望">
+        <div class="profile">
+            <div class="textbox1">
+                <p>林　慶門<br>Hayashi Keito</p>
+                <dd>大学卒業後、総合商社に入社。入社後自動車ビジネスに従事<br>
+                会社に所属しながら自動車業界のビジネスモデルを変革する事業を立案</dd>
+            </div>
+            <img src="自己紹介ページ挿入①.jpg" alt="挿入写真①">    
+        </div>
 
+        <div class="vision">
+            <hr>
+            <p>自動車業界の"Vision"について<br></p>
+            <dd>自動車業界は『CASE』（Connected/Autonomous/Shared&Services/Erectricの総称)を中心に100年に１度の変革期を迎えております。<br>
+                自動車は単なる移動手段ではなく、モビリティーとしての価値が求められます。そのため今後はソフト/ハードが著しく成長していくと考えられます。<br>
+                実際に自動車のソフトに関してはGoogleやAmazonなどのECに強みを持つ企業が、参入を表明しており業界の再編が進んでいます。<br>
+                また、自動車のハードに関しては『CASE』により消費者が自動車に求める価値は多様化していきます。<br>
+                今までは数種類の大衆車と呼ばれる人気車種を低コストで大量生産し、莫大な収益を確保していました。しかし、ニーズが多様化していく中で<br>
+                現在の自動車モデルである「少車種・大量生産」モデルより『多車種・少量生産」モデルへの変革が予想できます。つまり、自動車の製造現場では<br>
+                現状より扱う部品点数が増え、複雑な製造管理を実施する必要があります。『CASE』が本格化する前に自動車業界全体でDXを進める必要があります。
+            </dd>
+            <p>DXツールに関して</p>
+            <dd>
+                〜〜〜<br>
+            </dd>
+        </div>
 
-            
+        <div class="Q&A">
+            <hr>
+            <p>お問合せフォーム</p>
+            <form action="program.php" method="post">
+                <dl>
+                    <div class="form-item">
+                        <dt>お名前</dt>
+                        <dd><input type="text" name="userName"></dd>
+                    </div>
+                    <div class="form-item">
+                        <dt>メールアドレス</dt>
+                        <dd><input type="email" name="userEmail"></dd>
+                    </div>
+                    <div class="form-item">
+                        <dt>職業</dt>
+                        <dd>
+                            <label class="label radio"><input type="radio" name="job" value="学生"　checked>学生</label>
+                            <label class="label radio"><input type="radio" name="job" value="会社員">会社員</label>
+                            <label class="label radio"><input type="radio" name="job" value="その他">その他</label>
+                        </dd>
+                    </div>
+                    <div class="form-item">
+                        <dt>お問合わせ種別</dt>
+                        <dd>
+                            <select name="messageType">
+                                <option value="事業について" selected>事業について</option>
+                                <option value="その他お問合わせ">その他お問合わせ</option>
+                            </select>
+                        </dd>
+                    </div>
+                    <div class="form-item">
+                        <dt>お問合せ内容</dt>
+                        <dd><textarea name="message"></textarea></dd>
+                    </div>
+                </dl>
+                <div class="form-submit">
+                    <input type="submit" value="送信する">
+                </div>    
+            </form>    
+
         </div>
 
     </section>
+
+    <footer>
+        <ul class="gnav-list-1">
+            <li><a>より良い自動車業界へ<br></a></li>
+    </footer>
+
 
 
 </body>
